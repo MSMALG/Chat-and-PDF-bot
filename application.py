@@ -22,7 +22,6 @@ def init():
 
 
 
-
 def main():
 
     init()
@@ -47,7 +46,6 @@ def main():
                 st.session_state.messages.append(AIMessage(content = response.content))
     
                 
-    
     #Displaying all of the messages the user had by fetching them
     #We used get to set a default value in case messages don't exist
     messages = st.session_state.get("messages", [])
