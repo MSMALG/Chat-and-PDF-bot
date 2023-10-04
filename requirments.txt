@@ -1,0 +1,8 @@
+Packages to install:
+1. Langchain
+2. Streamlit
+3. st_chat_message
+4. streamlit_option_menu
+5. OpenAI ----> get an api key
+6. PyPDF
+7. dotenv
