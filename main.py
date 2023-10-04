@@ -7,7 +7,7 @@ st.set_page_config(
     page_icon = "🤖"
 )
 
-#This class is the link between applicaton.py and pdfbot.py
+#This class is the linker between applicaton.py and pdfbot.py
 class MultiApp:
     def __init__(self):
         self.apps = []
