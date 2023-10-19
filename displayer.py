@@ -1,28 +1,38 @@
 css = '''
 <style>
 .chat-message {
-    padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1rem; display: flex
+    padding: 1.5rem; 
+    border-radius: 0.5rem; 
+    margin-bottom: 1rem; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.chat-message.user {
-    background-color: #2b313e
+.bot {
+    background-color: #FFFFFF;
+    color: #000;
+    border: 1px solid #228A5E;
 }
-.chat-message.bot {
-    background-color: #475063
+.user {
+    background-color: #228A5E;
+    color: #000;
+    flex-direction: row-reverse;
 }
-.chat-message .avatar {
-  width: 20%;
+.user .message{
+    text-align: end;
 }
 .chat-message .avatar img {
-  max-width: 78px;
-  max-height: 78px;
+  max-width: 4.9rem;
+  max-height: 4.9rem;
   border-radius: 50%;
   object-fit: cover;
 }
 .chat-message .message {
   width: 80%;
   padding: 0 1.5rem;
-  color: #fff;
+  color: #000;
 }
+</style>
 '''
 
 
