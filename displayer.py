@@ -42,7 +42,7 @@ bot_template = '''
         <img src="https://www.clipartmax.com/png/middle/118-1184192_virtual-assistants-and-chat-bots-bot-icon-bot.png" 
         style="max-height: 4.5rem; max-width: 4.5rem; border-radius: 50%; object-fit: cover;">
     </div>
-    <div class="message" style="text-align: end; width: 80%; padding: 0 1.5rem; color: #000;">{{MSG}}</div>
+    <div class="message" style="text-align: justify; width: 80%; padding: 0 1.5rem; color: #000;">{{MSG}}</div>
 </div>
 '''
 
@@ -52,6 +52,6 @@ user_template = '''
         <img src="https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png"
         style="max-height: 4.5rem; max-width: 4.5rem; border-radius: 50%; object-fit: cover;">
     </div>    
-    <div class="message" style="text-align: end; width: 80%; padding: 0 1.5rem; color: #000;">{{MSG}}</div>
+    <div class="message" style="text-align: justify; width: 80%; padding: 0 1.5rem; color: #000;">{{MSG}}</div>
 </div>
 '''
