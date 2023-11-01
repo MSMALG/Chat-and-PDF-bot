@@ -2,7 +2,7 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 from PyPDF2 import PdfReader
-from displayer import css, bot_template, user_template
+from displayer import bot_template, user_template
 
 
 from langchain.chains import ConversationalRetrievalChain
