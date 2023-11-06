@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-from st_chat_message import message
+from displayer import bot_template, user_template
 from dotenv import load_dotenv
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import (
@@ -50,13 +50,13 @@ def main():
     #We used get to set a default value in case messages don't exist
     messages = st.session_state.get("messages", [])
 
-    #Loopin throw all of the messages if 1user(odd number) display it from the human position.
+    #Looping throw all of the messages if 1user(odd number) display it from the human position.
     #If two users(even number) display it from the bot position.
     for i, msgs in enumerate(messages[1:]):
         if i % 2 == 0:
-            message(msgs.content, is_user=True, key = str(i) + '_user')
+            st.markdown(user_template.replace("{{MSG}}", msgs.content), unsafe_allow_html=True)
         else:
-            message(msgs.content, is_user=False, key = str(i) + '_ai')
+            st.markdown(bot_template.replace("{{MSG}}", msgs.content), unsafe_allow_html=True)
     
 if __name__ == '__main__':
     main()
