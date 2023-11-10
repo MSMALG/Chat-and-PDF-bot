@@ -86,7 +86,7 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("ZIKO 🤖")
+    st.header("ZIKO PDF 🤖")
  
     #PDF Bot actions
     userq = st.text_input("Ask your question about your documents here: ") 
